@@ -15,9 +15,3 @@ def histogram(points, bins):
         densities.append(density)
     
     return densities
-
-
-
-points = [1, 2, 3, 6, 7, 9, 10, 11]
-bins = [(0, 4), (4, 8), (8, 12)]
-print(histogram(points, bins))
