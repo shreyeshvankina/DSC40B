@@ -4,9 +4,9 @@ from collections import deque
 def cluster(graph, weights, level):
 
 	clusters = []
-	visited = {node:"undiscovered" for node in graph.nodes()}
+	visited = {node:"undiscovered" for node in graph.nodes}
 
-	for start in graph.nodes():
+	for start in graph.nodes:
 		if visited[start] == "visited":
 			continue
 		pending = deque([start])
